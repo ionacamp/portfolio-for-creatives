@@ -110,7 +110,7 @@
   --color-text-secondary: #333;
   --color-accent-primary: #432f2f;
   --color-accent-secondary: #fbf4d5;
-  --color-overlay-primary: #fff0b5a2;
+  --color-overlay-primary: rgb(67, 47, 47, 0.8322);
   --color-highlight: lemonchiffon;
   --color-fallback: #a4cade; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -126,11 +126,11 @@
 
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
-  --color-text-project-category: #ffffff;
+  --color-text-project-category: #a4cade;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #000000;
-  --color-text-work-grid-title: #ffffff;
+  --color-text-work-grid-title: #a4cade;
   /* Link States */
   --color-link: #5200ff;
   --color-link-hover: #111;

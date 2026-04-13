@@ -66,7 +66,7 @@
 @import url("animated-gradient.css");
 
 /* File for adding a glitch animation to your 404 error page */
-@import url("error.css");
+
 
 /* File for adding text stroke (outline) effect */
 @import url("text-stroke.css");
@@ -107,7 +107,7 @@
   --font-family-heading: "Eczar", serif;
   --font-family-project-title: "Eczar", serif;
   /* Core Colours */
-  --color-text-primary: #222;
+  --color-text-primary: #432F2F;
   --color-text-secondary: #333;
   --color-accent-primary: #432f2f;
   --color-accent-secondary: #fbf4d5;
@@ -128,14 +128,14 @@
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #a4cade;
-  --color-text-project-description: #222;
-  --color-text-project-sidebar: #222;
-  --color-text-project-title: #000000;
+  --color-text-project-description: #432F2F;
+  --color-text-project-sidebar: #432F2F;
+  --color-text-project-title: #432F2F;
   --color-text-work-grid-title: #a4cade;
   /* Link States */
-  --color-link: #5200ff;
+  --color-link: #fbf4d5;
   --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link-visited: #fbf4d5;
   /* Navigation */
   --color-nav-link: #432f2f;
   --color-nav-link-hover: #321575;
@@ -461,7 +461,7 @@ h2 {
   font-family: "Righteous";
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--h2-color);
+  color: var(#432F2F);
 }
 
 h3 {
@@ -953,7 +953,7 @@ a.nav-link-primary:hover {
   display: grid; /* Set to grid layout */
   grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
   grid-gap: 3rem; /* Space between grid items */
-  background: var(#fbf4d5); /* Background color for the section */
+  background: var(#c1dbe9); /* Background color for the section */
   padding: var(--padding-small); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
 }
@@ -996,7 +996,7 @@ a.nav-link-primary:hover {
   grid-template-columns: 1fr; /* Single column layout */
   grid-gap: 3rem; /* Consistent spacing between sections */
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
-  background-color: #fbf4d5; /* Using CSS variable for theming */
+  background-color: #c1dbe9; /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
@@ -1118,6 +1118,7 @@ a.nav-link-primary:hover {
 /* Project Page Layout - This section contains the layout for project pages,         */
 /* including the project image, description, sidebar, and navigation arrows.         */
 /* ---------------------------------------------------------------------------------- */
+/* CSS for the project pages */
 
 /* Wrapper for the main project section and sidebar */
 .project-wrapper,
@@ -1323,10 +1324,6 @@ a.nav-link-primary:hover {
   margin: 0 auto;
 }
 
-.error-page-animation {
-  width: 25rem;
-}
-
 /*
 
 ██████  ██       █████  ██    ██ 
@@ -1414,6 +1411,7 @@ to keep your styles reusable and consistent.
   }
 
   h2 {
+    text-color
     font-size: 2.25rem;
   }
 
@@ -1484,7 +1482,7 @@ to keep your styles reusable and consistent.
   }
 
   .error-404 {
-    font-size: 5rem;
+    font-size: 8rem;
   }
 
   /* Work Page Grid for Large Devices */

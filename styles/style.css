@@ -111,7 +111,14 @@
   --color-text-secondary: #333;
   --color-accent-primary: #432f2f;
   --color-accent-secondary: #fbf4d5;
-  --color-overlay-primary: rgb(67, 47, 47, 0.8322);
+  --color-overlay-primary:/* css gradient: second layer */
+{
+  width: 250px;
+  height: 250px;
+  background: 
+	linear-gradient(rgba(70,44,43,1), rgba(0,0,0,0));
+  /* filter: contrast(170%) brightness(1000%); */
+};
   --color-highlight: lemonchiffon;
   --color-fallback: #a4cade; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -289,10 +296,7 @@ svg {
 }
 
 /* Adds a dashed border to help you see the box while you're designing */
-.border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
-}
+
 
 /* ---------------------- */
 /* ✍️  Typography Helpers */
@@ -901,7 +905,7 @@ a.nav-link-primary:hover {
 }
 
 /* Optional container for future overlay customization */
-.project-details-overlay {
+.project-details-overlay {#432F2F}
   /* Placeholder: no custom styles yet */
 }
 
@@ -1411,7 +1415,6 @@ to keep your styles reusable and consistent.
   }
 
   h2 {
-    text-color
     font-size: 2.25rem;
   }
 
@@ -1638,7 +1641,7 @@ to keep your styles reusable and consistent.
   .work-details {
     width: 75%;
   }
-}
+
 
 /* X-Large devices (large desktops, 1200px and up)*/
 

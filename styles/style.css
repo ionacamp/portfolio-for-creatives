@@ -65,8 +65,6 @@
 /* File for adding a smooth animated gradient background */
 @import url("animated-gradient.css");
 
-/* File for adding a glitch animation to your 404 error page */
-
 
 /* File for adding text stroke (outline) effect */
 @import url("text-stroke.css");
@@ -129,7 +127,7 @@
   /* Headings */
   --h1-color: #a4cade;
   --h2-color: #b4d3e4;
-  --h3-color: #c1dbe9;
+  --h3-color: #432f2f;
   --h4-color: #dbecf4;
 
   /* Special Text Colours */
@@ -140,15 +138,15 @@
   --color-text-project-title: #432F2F;
   --color-text-work-grid-title: #a4cade;
   /* Link States */
-  --color-link: #fbf4d5;
-  --color-link-hover: #111;
-  --color-link-visited: #fbf4d5;
+  --color-link: #432F2F;
+  --color-link-hover: #fbf4d5;
+  --color-link-visited: #432F2F;
   /* Navigation */
   --color-nav-link: #432f2f;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-arrow: #432F2F;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #432F2F;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
@@ -163,9 +161,9 @@
     #321575 100%
   );
   /* Special Elements */
-  --color-icon-heart: darkred;
+  --color-icon-heart: #432F2F;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #fbf4d5;
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
   /* Animation Durations */
@@ -470,6 +468,7 @@ h2 {
 
 h3 {
   font-size: 1.325rem;
+  font-family: "Righteous"
   margin-bottom: 1rem;
   line-height: 1.2;
   color: var(--h3-color);
@@ -538,7 +537,7 @@ sup {
 /* Large project title — appears on individual project pages */
 .project-title {
   font-size: 3.625rem;
-  font-family: var(--font-family-project-title);
+  font-family: var("Montserrat Alternates");
   color: var(--color-text-project-title);
   margin-bottom: 1rem;
 }
@@ -905,7 +904,7 @@ a.nav-link-primary:hover {
 }
 
 /* Optional container for future overlay customization */
-.project-details-overlay {#432F2F}
+.project-details-overlay {
   /* Placeholder: no custom styles yet */
 }
 
@@ -1546,6 +1545,7 @@ to keep your styles reusable and consistent.
 
   .project-image-container,
   .project-description-container {
+    background-color: #a4c9de;
     flex-direction: row;
   }
 
